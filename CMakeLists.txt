@@ -63,7 +63,7 @@ install(
 
 option(BUILD_TESTS "Build the corgi test tests" ON)
 
-#if(BUILD_TESTS)
-#enable_testing()
-#add_subdirectory(test)
-#endif()
+if(BUILD_TESTS)
+enable_testing()
+add_subdirectory(test)
+endif()
